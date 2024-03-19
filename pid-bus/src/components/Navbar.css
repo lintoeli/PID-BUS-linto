@@ -1,0 +1,6 @@
+#menuButton {
+    position: fixed;
+    margin: 30px 50px;
+    justify-content: end;
+    right: 0;
+}

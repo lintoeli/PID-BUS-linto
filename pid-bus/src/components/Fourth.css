@@ -1,0 +1,68 @@
+.nosotros {
+    width: 100%;
+    height: 670px;
+    .title {
+        font-size: 40px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: calc(20%);
+        padding: 25px;
+        font-weight: 700;
+        margin-bottom: -50px;
+        color: azure;
+    
+    }
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 200px;
+    scale: 0.8;
+    
+}
+
+#card1 {
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    border: 1px solid rgb(255, 255, 255);
+    color: aliceblue;
+    transition: 200ms ease-in-out;
+    
+}
+
+
+#card1:hover {
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+}
+
+#image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1368px) {
+    .cards {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .nosotros {
+        height: 1150px;
+        .title {
+            font-size: 30px;
+            display: flex;
+            margin-left: 20%;
+            padding: 25px;
+            font-weight: 700;
+            margin-bottom: -100px;
+            color: azure;
+        }
+    }
+    
+}
