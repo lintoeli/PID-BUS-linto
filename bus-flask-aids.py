@@ -7,6 +7,10 @@ from ultralytics import YOLO
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def hello():
+    return  "Hello World!"
+
 @app.route('/detect_objects', methods=['POST'])
 def detect_objects():
     if 'image' not in request.files:
