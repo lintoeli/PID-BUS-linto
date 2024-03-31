@@ -34,7 +34,7 @@ export const Drag = () => {
             formData.append('image', file);
     
             try {
-                const response = await fetch('http://localhost:5000/detect_objects', {
+                const response = await fetch('https://pid-bus-linto.onrender.com/detect_objects', {
                     method: 'POST',
                     body: formData
                 });
