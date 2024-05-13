@@ -55,7 +55,7 @@ export const Drag = () => {
                         setResults({ imageUrl });
                     }
                     setLoading(false);
-                }, 5000);
+                }, 1000);
     
             } catch (error) {
                 console.error('Error al enviar la imagen:', error);

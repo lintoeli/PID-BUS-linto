@@ -21,7 +21,7 @@ def detect_objects():
     image.save(image_path)
 
     try:
-        model = YOLO('best.pt')
+        model = YOLO('best10-wc.pt')
         img = cv2.imread(image_path)
         pred = model.predict(img)[0]
 
